@@ -1,0 +1,101 @@
+/* Reset minimal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif; /* Typo futuriste */
+}
+
+/* Body */
+body {
+    background: radial-gradient(circle at top, #0d0d0d, #111111);
+    color: #00fffc; /* Teal néon */
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 2rem;
+    animation: backgroundPulse 10s infinite alternate;
+}
+
+/* Animations */
+@keyframes backgroundPulse {
+    0% { background-position: 0 0; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0 100%; }
+}
+
+/* Headings */
+h1, h2, h3 {
+    text-shadow: 0 0 8px #00fffc, 0 0 16px #ff00ff;
+    margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+    color: #ff00ff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #00ffff;
+    text-shadow: 0 0 12px #00ffff, 0 0 20px #ff00ff;
+    transform: scale(1.05);
+}
+
+/* Sections */
+section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border: 1px solid rgba(0, 255, 252, 0.5);
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px rgba(0, 255, 252, 0.3);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Cards for projects / mentoring / reviews */
+.card {
+    background: rgba(20, 20, 20, 0.6);
+    border-left: 4px solid #ff00ff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 25px #00fffc;
+}
+
+/* Buttons */
+button {
+    background: #00fffc;
+    color: #111;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #ff00ff;
+    color: #fff;
+    box-shadow: 0 0 15px #ff00ff, 0 0 25px #00fffc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 255, 252, 0.2);
+    font-size: 0.9rem;
+    color: rgba(0, 255, 252, 0.7);
+}
