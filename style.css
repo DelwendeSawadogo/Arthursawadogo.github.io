@@ -26,6 +26,7 @@ h1, h2, h3 {
 p {
     margin-bottom: 1rem;
     line-height: 1.6;
+    text-align: justify;
 }
 
 p br {
